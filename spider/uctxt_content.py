@@ -31,3 +31,5 @@ class PaserUCTxtContent(object):
 			file.write(string)
 			file.close()
 		print string
+
+paser = PaserUCTxtContent(url)

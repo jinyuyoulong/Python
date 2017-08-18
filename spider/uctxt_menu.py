@@ -17,9 +17,11 @@ for x in xrange(0,count):
 
 for k,v in enumerate(urlContents):
 	print k,v
+
+
 contentURL_1 = urlContents[0]
 print contentURL_1
 
-# contentObj = PaserUCTxtContent(urlContents[0])
-# contentObj.paser()
+contentObj = PaserUCTxtContent(urlContents[0])
+contentObj.paser()
 	
