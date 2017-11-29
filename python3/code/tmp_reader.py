@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 if __name__ == '__main__':
-	url = 'http://www.piaotian.com/html/8/8767/5648365.html'
+	url = 'http://www.piaotian.com/html/8/8767/5648381.html'
 	req = requests.get(url=url)
 	html = req.text
 	bf = BeautifulSoup(html, 'html.parser')
