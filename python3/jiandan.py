@@ -52,8 +52,8 @@ def save_imgs(folder,img_addrs):
             f.write(img)
 
 def download_mm(folder='OOXX',pages=10):
-    os.mkdir(folder)
-    os.chdir(folder)
+    # os.mkdir(folder)
+    # os.chdir(folder)
 
     url = "http://jandan.net/ooxx/"
     page_num = int(get_page(url))
@@ -62,7 +62,7 @@ def download_mm(folder='OOXX',pages=10):
         page_num -= i
         page_url = url + 'page-' + str(page_num) + '#comments'
         img_addrs = find_imgs(page_url)
-        save_imgs(folder,img_addrs)
+        # save_imgs(folder,img_addrs)
 
 if __name__ == '__main__':
     download_mm()
