@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import requests
 
 # url = 'http://www.biquge.com/0_68/1066142.html'  
-url = 'http://www.ixiaos.com/kuiyu/'  
+url = 'http://www.530p.com/xuanhuan/jiangye-146942/'  
 
 def setSrr(url):
     if(requests.get(url).status_code == 404):
@@ -20,6 +20,7 @@ def setSrr(url):
     html = response.read()  
     soup = BeautifulSoup(html)
     item = soup.findAll('h1') 
+    # get title
     title = re.match(r'(.*)<h1> (.*)</h1>(.*)', str(item) ,re.M|re.I).group(2)
     l.append(title.split(' ')[0])
     l.append(title)
@@ -72,9 +73,8 @@ def setTxts(urls):
 print(
 '''
 --------------
-开始下载超品相师
+开始下载
 --------------
-actanble 手打——
 '''
 )
 setTxts(setNewUrl(setNum(2456497,100000)))

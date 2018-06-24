@@ -8,7 +8,8 @@ bf = BeautifulSoup(html,'html.parser')
 content = bf.find_all('div',class_='clc')
 
 for item in content:
-	title = item.text
-	the_id = item['href']
-	print(item)
-	# print(the_id)
+	a = item.a
+	title = a.text
+	the_id = a['href']
+	str_print = title + ' \t' + the_id
+	print(str_print)
