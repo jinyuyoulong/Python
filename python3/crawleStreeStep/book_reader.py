@@ -2,10 +2,15 @@ import sys
 import requests
 from bs4 import BeautifulSoup
 import re
+# import urllib.requests
+
 
 def main():	
 	url = getURL()
-	req = requests.get(url=url)
+	headers = {
+	'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+	}
+	req = requests.get(url=url,headers=headers)
 	req.coding = 'utf-8'
 	bf = BeautifulSoup(req.content, 'lxml')#python3 默认使用Unicode，这里使用content二进制流进行解析
 	# page = bf.find_all('p', class_='Readpage')
@@ -17,7 +22,7 @@ def main():
 	# print(content.replace('\xa0'*2, '&&'))
 	# print(content.encode().decode('gbk'))
 	
-	print(text[0].text.replace('。', '。\n\n'))
+	print(text[0].text.replace('。' , '。\n\n'))#text没有换行，去掉了一切标签元素，只等使用。作为分割符
 
 	href = next_page.get('href')
 	print('url = \'http://www.530p.com%s\'' % href)
@@ -35,7 +40,7 @@ def m_writer(next_page_str):
 	# 	f.writelines(str)
 
 def getURL():
-	return 'http://www.530p.com/dushi/yihua-92147/7205887.htm'
+	return 'http://www.530p.com/xuanhuan/moshiweicheng-182471/26251954.htm'
 	
 if __name__ == '__main__':
 	main()

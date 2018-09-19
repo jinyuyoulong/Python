@@ -1,9 +1,9 @@
 #coding:utf-8
 import sys, string, os, re, codecs   
 
-path="/Users/fanjinlong/dev/ios/Lottery/Lottery/" #路径  
-prefix = "FF_SSECP" #前缀  
-old_prefix = "FF_SSECPFF_SSECP"
+path="/Users/fanjinlong/dev/ios/caipiao/Lottery/Lottery/" #路径  
+prefix = "FF_SSECP" #前缀 
+old_prefix = "CP"
 
 dirname = "" 
 
@@ -21,7 +21,8 @@ def fileRename(filename, child, sufix):
 def textContentRename(path, child, sufix):
  
     #判断后缀名  
-    if (sufix == ".m" or sufix == ".h"):
+    # if (sufix == ".m" or sufix == ".h"):
+    if (sufix == ".xib"):
         # 文本替换
         f = codecs.open(child, 'r', encoding='utf-8')
         w_str = ""
@@ -77,7 +78,7 @@ def RenameFiles(path,prefix):
 
             print('child',child)
             print("path",path)
-
+            print("\n")
             textContentRename(path,child, sufix)
             # fileRename(filename, child,sufix)
 
