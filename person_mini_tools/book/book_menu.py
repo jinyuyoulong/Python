@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = 'http://www.530p.com/xuanhuan/moshiweicheng-182471/'
+url = 'http://www.530p.com/xuanhuan/qingyunian-15152/'
 headers = {
 	'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
 }

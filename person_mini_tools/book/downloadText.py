@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import requests
 
 # url = 'http://www.biquge.com/0_68/1066142.html'  
-url = 'http://www.530p.com/xuanhuan/jiangye-146942/'  
+url = 'http://m.zhanzhekan1.cc/13_13718/all.html'  
 
 def setSrr(url):
     if(requests.get(url).status_code == 404):
@@ -69,7 +69,8 @@ def setNewUrl(sl):
 def setTxts(urls):
     for url in urls:
         setDoc(setSrr(url))
-    
+
+
 print(
 '''
 --------------

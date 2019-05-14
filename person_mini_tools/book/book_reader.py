@@ -12,7 +12,9 @@ def main():
 	}
 	req = requests.get(url=url,headers=headers)
 	req.coding = 'utf-8'
-	bf = BeautifulSoup(req.content, 'lxml')#python3 默认使用Unicode，这里使用content二进制流进行解析
+	#使用自带的html.parser解析，速度慢但通用
+	# lxml 解析速度快
+	bf = BeautifulSoup(req.content, 'html.parser')#python3 默认使用Unicode，这里使用content二进制流进行解析
 	# page = bf.find_all('p', class_='Readpage')
 	text = bf.find_all('div', id='cp_content')
 	next_page = bf.find('a',id='nextLink')
@@ -40,7 +42,7 @@ def m_writer(next_page_str):
 	# 	f.writelines(str)
 
 def getURL():
-	return 'http://www.530p.com/xuanhuan/moshiweicheng-182471/26251954.htm'
+	return 'http://530p.com/xuanhuan/qingyunian-15152/1261899.htm'
 	
 if __name__ == '__main__':
 	main()

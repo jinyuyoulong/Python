@@ -13,3 +13,13 @@ class TutorialItem(scrapy.Item):
     name = scrapy.Field()
     link = scrapy.Field()
     author = scrapy.Field()
+
+class MyspiderItem(scrapy.Item):
+    uni_name = scrapy.Field()
+    uni_id = scrapy.Field()
+    city_code = scrapy.Field()
+    uni_type = scrapy.Field()
+    slogo = scrapy.Field()
+    #录取难度
+    safehard = scrapy.Field()
+    rank = scrapy.Field()
