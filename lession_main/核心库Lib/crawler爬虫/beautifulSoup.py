@@ -25,8 +25,8 @@ soup = BeautifulSoup(open('index.html'), "lxml")
 # print soup.p['class'] #单独获取属性值
 # print soup.p.get('class') #单独获取属性值
 
+#class
 #soup.p['class'] = "newClass" #修改属性值
-
 # del soup.p['class'] #删除属性
 
 # NavigableString
