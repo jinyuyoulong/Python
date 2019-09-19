@@ -1,7 +1,7 @@
 # STM论坛 Finch《Affiliate Marketing 完全指南》中文版
 
 
-
+[TOC]
 博客链接：https_finchsells_com
 新手可读，不含水分，绝对干货，作者称为“改变人生的一本书”。
 

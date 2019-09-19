@@ -1,3 +1,5 @@
+# 装饰者 装饰化器
+
 def f1(x):
     pass
 print f1.__name__
