@@ -1,3 +1,5 @@
+#!/usr/bin/python
+#coding:utf-8
 import math
 
 def quadratic_equation(a, b, c):

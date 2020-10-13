@@ -1,3 +1,6 @@
+#!/usr/bin/python
+#-*- coding:utf-8 -*-
+
 class Student(object):
 	"""test class"""
 	def __init__(self, name,score):

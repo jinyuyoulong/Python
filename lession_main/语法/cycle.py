@@ -1,4 +1,7 @@
 
+#!/usr/bin/python
+#-*- coding:utf-8 -*-
+
 def for1():
 	arr = ['one','two','three']
 	for item in arr:

@@ -1,3 +1,6 @@
+#!/usr/bin/python
+#-*- coding:utf-8 -*-
+
 import math
 def average(*args):
     if len(args)==0:

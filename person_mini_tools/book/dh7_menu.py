@@ -4,6 +4,7 @@ import requests
 
 def main():
 	# sex web site
+	# www.d2hd2h.com
 	url = 'http://www.dh7dh7.com/arttypehtml/2.html'
 	headers = {
 	'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'

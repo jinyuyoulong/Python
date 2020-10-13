@@ -1,3 +1,6 @@
+#!/usr/bin/python
+#-*- coding:utf-8 -*-
+
 # 返回函数不要引用任何循环变量，或者后续会发生变化的变量。
 def count():
     fs = []

@@ -1,3 +1,7 @@
+#!/usr/bin/python
+#coding:utf-8
+# 切片
+
 L = range(1, 101)
 #正序
 print L[4::5]

@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #coding: utf8
 # def f():
 #     print 'call f()...'

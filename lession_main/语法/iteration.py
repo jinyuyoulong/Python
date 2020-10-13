@@ -1,3 +1,6 @@
+#!/usr/bin/python
+#coding:utf-8
+
 # 迭代
 d = { 'Adam': 95, 'Lisa': 85, 'Bart': 59, 'Paul': 74 }
 
